@@ -9,7 +9,7 @@ body {
   overflow: hidden;
 }
 .image1 {
-  position: absolute;
+  position: fixed;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -2;
@@ -28,7 +28,7 @@ body {
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   margin-left: 5vh;
-  position: absolute;
+  position: fixed;
 }
 .circle {
   display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 .circle {
-  position: absolute;
+  position: fixed;
   top: 85vh;
   right: -8vw;
   width: 20vw;
@@ -54,31 +54,46 @@ body {
   font-size: 1.5vh;
   z-index: 4;
 }
-.text {
+.circle a {
   color: rgba(77, 69, 181, 1);
   font-size: 200%;
   position: absolute;
-  margin-left: 10vh;
+  margin-left: 4vw;
   margin-bottom: 18vh;
 }
-
-
-
-
-
-
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10vw;
+  padding: 15vh;
+}
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: -15px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: rgba(217, 217, 217, 0.27);
+  width: 60vw;
+  max-height: min-content;
+  color: #444444;
+  opacity: 90%;
+}
 
 .left-panel h1 {
   margin-top: -10px;
   font-size: 2rem;
-  color: #4d45b5;
+
   text-align: left;
   font-size: 4vh;
 }
 .left-panel h2 {
   margin-top: -15px;
   font-size: 1rem;
-  color: #4d45b5;
 }
 .left-panel p {
   margin-top: px;
@@ -89,6 +104,17 @@ body {
   list-style-type: disc;
   padding-left: 20px;
 }
+.links-row {
+  display: flex;
+  gap: 15px;
+}
+.links-row a {
+  text-decoration: under;
+  color: #444444;        
+  padding: 10px 15px;
+
+}
+
 .right-panel {
   display: flex;
   flex-direction: column;
@@ -99,9 +125,8 @@ body {
   box-sizing: border-box;
   border-radius: 25px;
   background-color: rgba(217, 217, 217, 0.27);
-  width: 30vw;
+  width: 35vw;
   height: 50vh;
-  margin-top: 20vh;
 }
 
 .right-panel h2 {

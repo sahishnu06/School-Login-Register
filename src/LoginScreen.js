@@ -27,6 +27,12 @@ const LoginScreen = () => {
               arcu.
             </li>
           </ul>
+          <div className="links-row">
+      <a href="#" target="_blank" rel="noopener noreferrer">Student</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Account</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">Principal</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">HR/IT</a>
+    </div>
         </div>
         <div className="right-panel">
           <h2>Sign in to your account</h2>
@@ -52,9 +58,7 @@ const LoginScreen = () => {
         alt="students"
       />
       <div class="circle">
-        <p class="text">
-          Registor <br></br>Today!
-        </p>
+        <a href="#" target="_blank" rel="noopener noreferrer">Registor<br></br>Today!</a>
       </div>
     </div>
   );
