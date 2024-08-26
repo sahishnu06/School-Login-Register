@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
+import { Link } from "react-router-dom";
+import "./RegistrationScreen.css";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -50,10 +51,14 @@ const RegistrationForm = () => {
   return (
     <div className="body">
       <img
-        src={require("./assets/images/Vectorimg22 (1).png")}
+        src={require("../assets/images/Vectorimg22 (1).png")}
         className="image1"
         alt="Background1"
       />
+      <div className="logo">
+        LOGO
+      </div>
+
       <div className="parent-container">
         <div className="registration-container">
           <h1>Register Your Organization Today</h1>
@@ -197,16 +202,17 @@ const RegistrationForm = () => {
         </div>
 
         <img
-          src={require("./assets/images/aStudent.png")}
+          src={require("../assets/images/aStudent.png")}
           className="image2"
           alt="student"
         />
         <div className="circle">
-          <p className="text">Sign In</p>
+          <p className="text">
+            <Link to="/signin">Sign In</Link>
+          </p>
         </div>
       </div>
     </div>
   );
 };
-
 export default RegistrationForm;

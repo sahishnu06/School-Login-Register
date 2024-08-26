@@ -1,3 +1,33 @@
+@media only screen and (max-width: 768px) {
+  .body {
+    overflow: hidden;
+  }
+  .login-container {
+    justify-content: center;
+    padding: 5vw !important;
+    padding-top: 20vh !important;
+  }
+  .right-panel {
+    width: 200vw;
+    padding: 10vw;
+  }
+  .image1 {
+    height: 100% !important;
+    object-fit: cover;
+    object-position: initial;
+    margin-left: 10vw;
+  }
+  .image2{
+    margin-left: -27vw;
+  }
+  .h1 {
+    color:red
+  }
+.image3{
+  display: absolute !important;
+}
+}
+
 body {
   background-color: #6f88d0;
   overflow: hidden;
@@ -24,7 +54,7 @@ body {
   left: 14;
   height: auto;
 }
-.logo {
+.logo .h1 {
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   margin-left: 5vh;
@@ -37,7 +67,6 @@ body {
   background-color: rgba(236, 233, 238, 1);
   margin-left: 150vh;
 }
-
 .circle {
   position: fixed;
   top: 85vh;
@@ -56,17 +85,21 @@ body {
 }
 .circle a {
   color: rgba(77, 69, 181, 1);
+  margin-bottom: 20vh;
+  text-decoration: none;
+}
+.text {
   font-size: 200%;
   position: absolute;
-  margin-left: 4vw;
-  margin-bottom: 18vh;
 }
+
 .login-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   column-gap: 10vw;
   padding: 15vh;
+  z-index: 5;
 }
 .left-panel {
   display: flex;
@@ -110,9 +143,8 @@ body {
 }
 .links-row a {
   text-decoration: under;
-  color: #444444;        
+  color: #444444;
   padding: 10px 15px;
-
 }
 
 .right-panel {
@@ -125,7 +157,6 @@ body {
   box-sizing: border-box;
   border-radius: 25px;
   background-color: rgba(217, 217, 217, 0.27);
-  width: 35vw;
   height: 50vh;
 }
 
@@ -177,4 +208,22 @@ body {
 .recovery {
   display: flex;
   justify-content: space-between;
+  float: left;
+}
+.image3{
+  display:none;
+}
+/*.top-right {
+  display: none;
+}*/
+
+@media only screen and (max-width: 768px) {
+  .left-panel,
+  .circle {
+    display: none !important;
+  }
+  .image1{
+    display: none !important;
+  }
+
 }

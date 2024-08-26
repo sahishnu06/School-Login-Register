@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./LoginScreen.css";
 
 const LoginScreen = () => {
   return (
     <div className="login-screen">
       <img
-        src={require("./assets/images/Vector 1-2.png")}
+        src={require("../assets/images/Vector 1-2.png")}
         className="image1"
         alt="Background"
+      />
+        <img
+        src={require("../assets/images/Mobile Vector .png")}
+        className="image3"
+        alt="Background-mobile"
       />
       <div className="logo">
         <h1>LOGO</h1>
@@ -27,13 +33,9 @@ const LoginScreen = () => {
               arcu.
             </li>
           </ul>
-          <div className="links-row">
-      <a href="#" target="_blank" rel="noopener noreferrer">Student</a>
-      <a href="#" target="_blank" rel="noopener noreferrer">Account</a>
-      <a href="#" target="_blank" rel="noopener noreferrer">Principal</a>
-      <a href="#" target="_blank" rel="noopener noreferrer">HR/IT</a>
-    </div>
         </div>
+      
+       
         <div className="right-panel">
           <h2>Sign in to your account</h2>
           <form>
@@ -53,12 +55,14 @@ const LoginScreen = () => {
         </div>
       </div>
       <img
-        src={require("./assets/images/Students.png")}
+        src={require("../assets/images/Students.png")}
         className="image2"
         alt="students"
       />
       <div class="circle">
-        <a href="#" target="_blank" rel="noopener noreferrer">Registor<br></br>Today!</a>
+        <p class="text">
+        <Link to="/register">Register<br/> Today!</Link>
+        </p>
       </div>
     </div>
   );
