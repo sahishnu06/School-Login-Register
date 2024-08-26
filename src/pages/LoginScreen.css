@@ -10,6 +10,7 @@
   .right-panel {
     width: 200vw;
     padding: 10vw;
+    z-index: 6;
   }
   .image1 {
     height: 100% !important;
@@ -19,13 +20,17 @@
   }
   .image2{
     margin-left: -27vw;
+    height: 3vh;
+    width: 20rem;
   }
   .h1 {
     color:red
   }
 .image3{
-  display: absolute !important;
+  display:block ;
+  z-index: -1;
 }
+
 }
 
 body {
@@ -38,6 +43,9 @@ body {
   display: inline-block;
   overflow: hidden;
 }
+/*.mobile-top{
+  display: none;
+}*/
 .image1 {
   position: fixed;
   background-size: contain;

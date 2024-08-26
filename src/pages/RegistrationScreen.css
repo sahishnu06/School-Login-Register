@@ -1,17 +1,12 @@
-@media only screen and (max-width: 770px)
-{
-  .image1{
-    width:500px;
+@media only screen and (max-width: 770px) {
+  .image1 {
+    width: 500px;
     background-size: 10%;
-    
   }
-.grid-container {
- 
-}
 }
 body {
   background-color: #6f88d0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin: 0;
   padding: 0;
 }
@@ -92,7 +87,7 @@ body {
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
-  z-index: 5;
+  overflow-y: scroll !important;
 }
 
 h1 {
@@ -172,11 +167,21 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-@media screen and (max-width: 770px) {
-  .grid-container {
-    width: 50%;
+@media screen and (max-width: 1000px) {
+  .grid-container,
+  .grid-container2 {
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
- 
-  
+}
+@media screen and (max-width: 500px) {
+  .grid-container,
+  .grid-container2 {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image2{
+    width: 10rem;
+    margin-left: 2rem;
+  }
 }

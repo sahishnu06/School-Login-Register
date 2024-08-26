@@ -18,6 +18,7 @@ const LoginScreen = () => {
       <div className="logo">
         <h1>LOGO</h1>
       </div>
+  
       <div className="login-container">
         <div className="left-panel">
           <h1>LOREM IPSUM</h1>
